@@ -1,6 +1,9 @@
 #!/bin/bash
 
-mysqlPassword=$1
+#mysqlPassword=$1
+
+Defaults!/path/to/my/bin !requiretty
+Defaults:ucloud !requiretty
 
 sudo rpm -Uvh https://repo.zabbix.com/zabbix/4.4/rhel/7/x86_64/zabbix-release-4.4-1.el7.noarch.rpm
 sudo yum install zabbix-agent -y
